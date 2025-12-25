@@ -544,7 +544,7 @@ footer{
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
     .nav-button{
-        display: none;
+        display: block !important;
     }
     .nav-menu.responsive{
         left: 0;
@@ -634,5 +634,15 @@ footer{
     }
     .input-field{
         width: 100%;
+    }
+}
+
+
+/* ===== MOBILE CV BUTTON SIZE FIX (NO DESIGN CHANGE) ===== */
+@media only screen and (max-width: 900px){
+    .nav-button .btn{
+        padding: 8px 14px;      /* ছোট padding */
+        font-size: 13px;        /* ছোট text */
+        border-radius: 8px;     /* same style, just neat */
     }
 }
